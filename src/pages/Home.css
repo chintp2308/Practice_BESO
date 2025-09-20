@@ -1,6 +1,8 @@
 .img-avt {
-  width: 1000px;
-  height: 1333px;
+  width: 100%; /* co giãn theo container */
+  max-width: 1000px; /* giới hạn tối đa */
+  height: auto;
+  object-fit: contain; /* giữ toàn bộ ảnh, không bị cắt */
 }
 .home-picture {
   text-align: center;
