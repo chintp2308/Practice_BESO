@@ -1,0 +1,90 @@
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 80px 40px 80px;
+  flex-direction: row;
+  gap: 20px;
+}
+.footer-top h4 {
+  color: #252a2b;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  margin: 0 0 20px;
+  position: relative;
+  line-height: 30px;
+}
+.footer-top span {
+  color: #252a2b;
+  font-size: 14px;
+  margin: 0 0 10px 0;
+  line-height: 22px;
+}
+.introduce {
+  flex: 1;
+  min-width: 250px;
+  max-width: 500px;
+}
+.introduce-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.introduce img {
+  margin-top: 20px;
+  width: 150px;
+}
+ul {
+  list-style-type: none;
+}
+.contact {
+  flex: 0.5;
+  min-width: 250px;
+  max-width: 300px;
+}
+.contact ul li {
+  background-size: 15px 15px !important;
+  line-height: 22px;
+  font-size: 14px;
+  color: #252a2b;
+}
+.infor {
+  flex: 0.9;
+  min-width: 250px;
+  max-width: 300px;
+}
+
+.infor ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.infor li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: #252a2b;
+}
+
+.map-icon {
+  font-size: 40px;
+  color: #333;
+}
+.mail-icon {
+  font-size: 18px;
+  color: #333;
+}
+.facebook {
+  flex: 0.8;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #e0e0e0;
+}
