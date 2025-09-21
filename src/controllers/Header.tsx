@@ -5,7 +5,7 @@ import { AiOutlineShopping } from "react-icons/ai";
 
 export default function Header() {
   return (
-    <div className="header-container">
+    <div>
       <div className="header-title">
         <p className="title">
           Miễn phí vận chuyển trong nước với đơn hàng trên 1.000.000đ
