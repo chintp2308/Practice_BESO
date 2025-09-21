@@ -4,7 +4,7 @@ import "./Footer.css";
 
 export default function Footer() {
   return (
-    <div>
+    <div className="footer-container">
       <div className="footer-top">
         <div className="introduce">
           <h4>Giới thiệu</h4>

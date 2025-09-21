@@ -1,3 +1,7 @@
+.header-container {
+  max-width: 1550px;
+  margin: 0 auto;
+}
 .header-title {
   border: 1px solid #ccc;
   text-align: center;
@@ -20,6 +24,15 @@
 .header {
   flex: 1;
 }
+.header-menu {
+  flex: 1;
+}
+.icon-menu {
+  display: none;
+}
+.input-search {
+  display: none;
+}
 .logo-center {
   text-align: center;
 }
@@ -34,12 +47,12 @@
   align-items: center;
   gap: 20px;
 }
+
 .icon-h {
   width: 25px;
   height: 25px;
 }
-.menu-header {
-}
+
 .menu-list {
   display: flex;
   flex-direction: row;
@@ -65,4 +78,50 @@ a {
   border-bottom: 1px solid #000;
   transition: all 0.2s ease-in-out;
   color: #abcc89;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    max-width: 768px;
+  }
+  .title {
+    font-size: 11px;
+  }
+
+  .logo-header {
+    padding: 10px 15px 10px 15px;
+  }
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+  .icon-menu {
+    display: block;
+    height: 30px;
+    width: 30px;
+  }
+  .search {
+    display: none;
+  }
+  .input-search {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .input-search input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 7px 40px 7px 10px;
+    background: #eeeeee;
+    border-radius: 4px;
+  }
+  .icon-search {
+    position: absolute;
+    right: 20px;
+    color: #666;
+    font-size: 18px;
+    pointer-events: none; /* để click không bị dính icon */
+  }
 }

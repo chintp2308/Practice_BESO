@@ -1,5 +1,5 @@
 import "./Header.css";
-import { IoSearch } from "react-icons/io5";
+import { IoMenu, IoSearch } from "react-icons/io5";
 import { FaUserCircle } from "react-icons/fa";
 import { AiOutlineShopping } from "react-icons/ai";
 
@@ -12,7 +12,9 @@ export default function Header() {
         </p>
       </div>
       <div className="logo-header">
-        <div className="header"></div>
+        <div className="header-menu">
+          <IoMenu className="icon-menu" />
+        </div>
         <div className="header logo-center">
           <a href="https://besovn.com/">
             <img
@@ -25,7 +27,7 @@ export default function Header() {
 
         <div className="icon-header header">
           <div className="search ">
-            <IoSearch className="icon-h" />
+            <IoSearch className="icon-h " />
           </div>
           <div className="profile ">
             <FaUserCircle className="icon-h" />
@@ -34,6 +36,10 @@ export default function Header() {
             <AiOutlineShopping className="icon-h" />
           </div>
         </div>
+      </div>
+      <div className="input-search">
+        <input placeholder="Tìm kiếm sản phẩm" />
+        <IoSearch className="icon-search " />
       </div>
       <div className="menu-header">
         <ul className="menu-list">

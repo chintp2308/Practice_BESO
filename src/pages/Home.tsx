@@ -2,7 +2,7 @@ import "./Home.css";
 
 export default function Home() {
   return (
-    <div>
+    <div className="container-home">
       <div className="home-picture">
         <picture>
           <img
