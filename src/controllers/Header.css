@@ -48,13 +48,15 @@
   width: 25px;
   height: 25px;
 }
+.menu-header {
+  display: flex;
+  justify-content: center;
+}
 
 .menu-list {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  justify-content: center;
-  align-items: center;
 }
 .menu-item {
   display: block;
@@ -75,8 +77,34 @@ a {
   transition: all 0.2s ease-in-out;
   color: #abcc89;
 }
+.menu_item_active {
+  border-bottom: 1px solid #000;
+  color: #abcc89;
+  padding: 10px 0 15px;
+}
 
 @media (max-width: 768px) {
+  .menu-header {
+    display: none; /* Ẩn mặc định trên mobile */
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+    z-index: 999;
+  }
+
+  .menu-header.open {
+    display: flex;
+  }
+
+  .menu-list {
+    flex-direction: column;
+    gap: 10px;
+  }
   .title {
     font-size: 11px;
   }

@@ -1,0 +1,148 @@
+.category-container {
+  max-width: 1550px;
+  display: flex;
+  flex-direction: column;
+}
+.category-menu {
+  height: 40px;
+  width: 100%;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  padding-left: 70px;
+}
+.category-content {
+  display: flex;
+  flex-direction: row;
+  padding: 50px 70px;
+}
+.category-left {
+  flex: 1;
+  color: #252a2b;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+.category-right {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.category-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section-category {
+  display: block;
+}
+.category-product {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.category-item {
+  width: 235px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.img-category {
+  width: 235px;
+  height: 100%;
+}
+.category-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.category-name {
+  color: #252a2b;
+  font-size: 14px;
+}
+.category-price {
+  color: #252a2b;
+  font-size: 14px;
+}
+.title-category {
+  display: none;
+}
+@media (max-width: 768px) {
+  .category-container {
+    max-width: 768px;
+  }
+  .category-menu {
+    padding-left: 15px;
+    background-color: #ffffff;
+    font-size: 10px;
+    color: #337ab7;
+  }
+  .category-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 15px;
+    gap: 20px;
+  }
+
+  .category-right {
+    font-size: 15px;
+    color: #252a2b;
+    gap: 20px;
+  }
+  .category-top {
+    justify-content: center;
+    color: #252a2b;
+  }
+  .section-category {
+    display: none;
+  }
+  .category-product {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .category-item {
+    width: 175px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .img-category {
+    width: 175px;
+    height: 100%;
+  }
+  .category-info {
+    display: flex;
+    gap: 0px;
+  }
+  .category-name {
+    font-size: 11px;
+  }
+  .category-price {
+    font-size: 11px;
+  }
+  .title-category {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    background-color: #f5f5f5;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    align-items: center;
+  }
+  .category-left {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    font-size: 12px;
+  }
+  .category-left.open {
+    max-height: 300px; /* đủ lớn để chứa menu */
+  }
+}

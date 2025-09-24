@@ -28,6 +28,11 @@
   min-width: 250px;
   max-width: 500px;
 }
+.footer-header {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
 .introduce-content {
   display: flex;
   flex-direction: column;
@@ -92,6 +97,14 @@ ul {
   padding: 20px 0;
   border-top: 1px solid #e0e0e0;
 }
+
+.footer-content {
+  display: block;
+}
+.up-down {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .footer-container {
     max-width: 768px;
@@ -101,15 +114,29 @@ ul {
     justify-content: space-between;
     padding: 40px 15px 40px 15px;
     flex-direction: column;
-    gap: 20px;
+    gap: 3px;
   }
-  .footer-top h4 {
-    text-align: center;
-  }
+
   .contact {
     max-width: 100%;
   }
   .infor {
     max-width: 100%;
+  }
+  .footer-content {
+    display: none;
+  }
+  .footer-content.open {
+    display: block;
+    margin-top: 10px;
+  }
+  .up-down {
+    display: block;
+  }
+  .footer-header {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: center;
   }
 }
