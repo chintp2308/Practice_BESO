@@ -13,7 +13,7 @@ export default function Category() {
     <div className="category-container">
       <div className="category-menu">Trang chủ/ Danh mục/ Tất cả sản phẩm</div>
       <div className="category-content">
-        <div>
+        <div className="category-L">
           {/* Khi bấm vào tiêu đề sẽ toggle */}
           <div
             className="title-category"

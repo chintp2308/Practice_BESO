@@ -1,0 +1,49 @@
+.introduction-container {
+}
+.introduction-content {
+  display: flex;
+  flex-direction: row;
+  padding: 30px 85px;
+  gap: 30px;
+}
+.introduction-left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 30px;
+}
+.introduction-right {
+  flex: 3;
+}
+.intro-menu {
+  border: 1px solid #ccc;
+  padding: 30px 20px;
+}
+.img-intro {
+  max-width: 100%;
+  overflow: hidden; /* để ảnh không tràn ra ngoài */
+
+  img {
+    width: 100%;
+    transition: transform 0.8s ease; /* thời gian và kiểu chuyển động */
+  }
+  img:hover {
+    transform: scale(1.2); /* phóng to 20% */
+  }
+}
+
+.boder-h2 {
+  border: 1px solid #000000;
+  margin-bottom: 20px;
+}
+.intro-menu-ul {
+  color: #252a2b;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+.content-intro {
+  line-height: 1.6;
+  padding-top: 20px;
+}
